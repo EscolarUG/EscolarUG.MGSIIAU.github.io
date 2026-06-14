@@ -1,0 +1,483 @@
+
+<!-- saved from url=(0080)https://siiauescolar.siiau.udg.mx/wal/sgpofer.secciones?pidmp=2055864&majrp=INME -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<script src="./jquery-1.10.2.js.descarga"></script>
+<style type="text/css">
+
+    BODY { font-family: Arial,helvetica,sans-serif;
+           font-size:   10;
+           }
+
+    TH {
+        font-family:       Arial,helvetica,sans-serif;
+        color:             #FFFFFF;
+        background-color:  #000080;
+        font-weight:       bold;
+        font-size:         14;
+       }
+
+    TH.titulos {
+        font-family:       Arial,helvetica,sans-serif;
+        color:             #000080;
+        background-color:  #CDDBEA;
+        font-weight:       bold;
+        font-size:         12;
+       }
+
+    TH.subtitulos {
+        font-family:       Arial,helvetica,sans-serif;
+        color:             #000080;
+        background-color:  #e5e5e5;
+        font-weight:       bold;
+        font-size:         12;
+       }
+
+    TH.encabezado {
+        font-family:       Arial,helvetica,sans-serif;
+        color:             #000080;
+        background-color:  #DCDCDC;
+        font-weight:       bold;
+        font-size:         12;
+       }
+
+    TD.tdlista {
+        font-family:       Arial,helvetica,sans-serif;
+        color:             #000080;
+        background-color:  #EDEFEF;
+        font-weight:       normal;
+        font-size:         11;
+       }
+
+    TD.tddatos {
+        font-family:       Arial,helvetica,sans-serif;
+        color:             #000080;
+        font-weight:       normal;
+        font-size:         10;
+       }
+
+    TD.horario {
+        font-family:       Arial,helvetica,sans-serif;
+        color:             #000080;
+        background-color:  #EDEFEF;
+        font-weight:       normal;
+        font-size:         10;
+       }
+
+    TD.tdprofesor {
+        font-family:       Arial,helvetica,sans-serif;
+        color:             #000000;
+        background-color:  #EDEFEF;
+        font-weight:       normal;
+        font-size:         9;
+       }
+
+    TR.profesor {
+        font-family:       Arial,helvetica,sans-serif;
+        color:             #000000;
+        background-color:  #EDEFEF;
+        font-weight:       normal;
+        font-size:         9;
+       }
+
+    </style>
+<style>
+      td.tdradio {font-family: Arial;
+                  font-size:12;
+                  background-color:#c0c0c0;}
+         </style>
+<script>
+
+     $(document).ready(function(){
+       $("input").keypress(function(e){
+         if(e.keyCode==13)
+          {
+            //$("#idConsultar").focus();
+            $("input").trigger("onblur");
+            $("#idConsultar").click();
+          }
+         });
+       });
+
+      function lov_carrera() {
+        var the_select = document.forms[0].cup;
+        var the_index = the_select.selectedIndex;
+        var cux = the_select.options[the_index].value;
+        var args = "resizable,top=200,left=450,width=350,height=550,scrollbars";
+        var tellUs = open("sspseca.lista_carreras?cup="+cux,"CARRERAS",args);
+       }
+     </script>
+<title>Consulta de Oferta Academica</title></head>
+
+
+<body style=""><br>
+<h1><font color="000066" face="arial" size="4">Forma de consulta de Oferta Académica</font></h1>
+<div style="width:50%;font-family:Arial;font-size:14px;">Para consultar la Oferta Académica introduce el patrón de búsqueda que te servirá para
+         filtrar los cursos. Recuerda que entre más completo sea tu patrón, más efectivo será
+         el resultado de la búsqueda. Al final oprime el botón "Consultar".<br>
+         <strong>NOTA</strong>: Para buscar por horario utiliza el formato de 24 hrs (Ejemplo: para buscar los curso de las 7:00 AM, debes de escribir <i>0700</i></div>
+<br>
+<br>
+<b><font color="000066" face="arial" size="2">Para consultar la Oferta Académica del <font color="990000" face="arial" size="3">Ciclo de Verano</font></font></b><font color="000066" face="arial" size="2"><font color="990000" face="arial" size="3">
+<br>
+  1. Seleccione el Ciclo "202680 - Calendario 26V"
+<br>
+  2. Y el centro universitario correspondiente o todos los centros
+<form action="https://siiauescolar.siiau.udg.mx/wal/sspseca.consulta_oferta" method="POST" name="frm_consulta_oferta">
+<table border="0" bgcolor="c0c0c0" cellspacing="0" cellpadding="5">
+<tbody><tr>
+<th colspan="4" class="thprincipal">Oferta Académica</th>
+</tr>
+<tr>
+<th align="RIGHT" class="encabezado">Ciclo:</th>
+<td colspan="3">
+<select name="ciclop" size="1" id="cicloID">
+<option value="2026D">2026D - Promocion 2026D
+</option><option value="2026C">2026C - Promocion 2026C
+</option><option value="202680">202680 - Ciclo de Verano 2026
+</option><option value="202620">202620 - Calendario 26 B
+</option><option value="202610">202610 - Calendario 26 A
+</option><option value="2025E">2025E - Promocion 2025E
+</option><option value="2025D">2025D - Promocion 2025D
+</option><option value="2025C">2025C - Promocion 2025C
+</option><option value="202580">202580 - Ciclo de Verano 2025
+</option><option value="202520">202520 - Calendario 25 B
+</option><option value="202510">202510 - Calendario 25 A
+</option><option value="2024Z">2024Z - Calendario 24Z Cuatrimestre
+</option><option value="2024Y">2024Y - Calendario 24Y Cuatrimestre
+</option><option value="2024X">2024X - Calendario 24X Cuatrimestre
+</option><option value="2024E">2024E - Promocion 2024E
+</option><option value="2024D">2024D - Promocion 2024 D
+</option><option value="2024C">2024C - Promocion 2024C
+</option><option value="202480">202480 - Ciclo de Verano 2024
+</option><option value="202420">202420 - Calendario 24 B
+</option><option value="202410">202410 - Calendario 24 A
+</option><option value="2023Z">2023Z - Calendario 23Z Cuatrimestre
+</option><option value="2023Y">2023Y - Calendario 23Y Cuatrimestre
+</option><option value="2023X">2023X - Calendario 23X Cuatrimestre
+</option><option value="2023J">2023J - Calendario 23 J
+</option><option value="2023I">2023I - Promocion 2023I
+</option><option value="2023F">2023F - Promocion 2023F
+</option><option value="2023E">2023E - Promocion 2023E
+</option><option value="2023C">2023C - Promocion 2023C
+</option><option value="202380">202380 - Ciclo de Verano 2023
+</option><option value="202320">202320 - Calendario 23 B
+</option><option value="202310">202310 - Calendario 23 A
+</option><option value="2022Z">2022Z - Calendario 22Z Cuatrimestre
+</option><option value="2022Y">2022Y - Calendario 22Y Cuatrimestre
+</option><option value="2022X">2022X - Calendario 22X Cuatrimestre
+</option><option value="2022H">2022H - Promocion 2022H
+</option><option value="2022F">2022F - Promocion 2022F
+</option><option value="2022E">2022E - Promocion 2022E
+</option><option value="2022C">2022C - Promocion 2022C
+</option><option value="202220">202220 - Calendario 22 B
+</option><option value="202210">202210 - Calendario 22 A
+</option><option value="2021Z">2021Z - Calendario 21Z Cuatrimestre
+</option><option value="2021Y">2021Y - Calendario 21Y Cuatrimestre
+</option><option value="2021X">2021X - Calendario 21X Cuatrimestre
+</option><option value="2021I">2021I - Promocion 2021I
+</option><option value="2021G">2021G - Promocion 2021G
+</option><option value="2021F">2021F - Promocion 2021F
+</option><option value="2021D">2021D - Promocion 2021D
+</option><option value="2021C">2021C - Promocion 2021C
+</option><option value="202120">202120 - Calendario 21 B
+</option><option value="202110">202110 - Calendario 21 A
+</option><option value="2020Z">2020Z - Calendario 20Z Cuatrimestre
+</option><option value="2020G">2020G - Promocion 2020G
+</option><option value="2020D">2020D - Promocion 2020D
+</option><option value="202080">202080 - Ciclo de Verano 2020
+</option><option value="202020">202020 - Calendario 20 B
+</option><option value="202010">202010 - Calendario 20 A
+</option><option value="2019E">2019E - Promocion 2019E
+</option><option value="2019D">2019D - Promocion 2019D
+</option><option value="2019C">2019C - Promocion 2019C
+</option><option value="201980">201980 - Ciclo de Verano 2019
+</option><option value="201920">201920 - Calendario 19 B
+</option><option value="201910">201910 - Calendario 19 A
+</option><option value="2018G">2018G - Promocion 2018G
+</option><option value="2018F">2018F - Promocion 2018F
+</option><option value="2018E">2018E - Promocion 2018E
+</option><option value="2018D">2018D - Promocion 2018D
+</option><option value="201880">201880 - Ciclo de Verano 2018
+</option><option value="201820">201820 - Calendario 18 B
+</option><option value="201810">201810 - Calendario 18 A
+</option><option value="2017I">2017I - Promocion 2017I
+</option><option value="2017F">2017F - Promocion 2017F
+</option><option value="2017E">2017E - Promocion 2017E
+</option><option value="2017D">2017D - Promocion 2017D
+</option><option value="201780">201780 - Ciclo de Verano 2017
+</option><option value="201720">201720 - Calendario 17 B
+</option><option value="201710">201710 - Calendario 17 A
+</option><option value="2016T">2016T - Promocion 2016T
+</option><option value="2016S">2016S - Promocion 2016S
+</option><option value="2016R">2016R - Promocion 2016R
+</option><option value="2016E">2016E - Promocion 2016E
+</option><option value="201680">201680 - Ciclo de Verano 2016
+</option><option value="201620">201620 - Calendario 16 B
+</option><option value="201610">201610 - Calendario 16 A
+</option><option value="2015T">2015T - Promocion 2015T
+</option><option value="2015S">2015S - Promocion 2015S
+</option><option value="2015G">2015G - Promocion 2015G
+</option><option value="2015E">2015E - Promocion 2015E
+</option><option value="201580">201580 - Ciclo de Verano 2015
+</option><option value="201520">201520 - Calendario 15 B
+</option><option value="201510">201510 - Calendario 15 A
+</option><option value="2014T">2014T - Promocion 2014T
+</option><option value="2014S">2014S - Promocion 2014S
+</option><option value="2014R">2014R - Promocion 2014R
+</option><option value="2014D">2014D - Promocion 2014D
+</option><option value="201480">201480 - Cursos de Verano 2014
+</option><option value="201420">201420 - Calendario 14 B
+</option><option value="201410">201410 - Calendario 14 A
+</option><option value="2013S">2013S - Promocion 2013S
+</option><option value="2013R">2013R - Promocion 2013R
+</option><option value="201380">201380 - Cursos de Verano 2013
+</option><option value="201320">201320 - Calendario 13 B
+</option><option value="201310">201310 - Calendario 13 A
+</option><option value="2012T">2012T - Promocion 2012T
+</option><option value="2012S">2012S - Promocion 2012S
+</option><option value="2012P">2012P - Promocion 2012P
+</option><option value="201280">201280 - Cursos de Verano 2012
+</option><option value="201220">201220 - Calendario 12 B
+</option><option value="201210">201210 - Calendario 12 A
+</option><option value="2011Z">2011Z - Promocion 2011Z
+</option><option value="2011T">2011T - Promocion 2011T
+</option><option value="2011S">2011S - Promocion 2011S
+</option><option value="2011H">2011H - Promocion 2011H
+</option><option value="201180">201180 - Cursos de Verano 2011
+</option><option value="201120">201120 - Calendario 11 B
+</option><option value="201110">201110 - Calendario 11 A
+</option><option value="2010S">2010S - Promocion 2010S
+</option><option value="201090">201090 - Calendario 10 U
+</option><option value="201080">201080 - Cursos de Verano 2010
+</option><option value="201020">201020 - Calendario 10 B
+</option><option value="201010">201010 - Calendario 10 A
+</option><option value="200990">200990 - Calendario 09 U
+</option><option value="200980">200980 - Cursos de Verano 2009
+</option><option value="200920">200920 - Calendario 09 B
+</option><option value="200910">200910 - Calendario 09 A
+</option><option value="200890">200890 - Calendario 08 U
+</option><option value="200880">200880 - Cursos de Verano 2008
+</option><option value="200820">200820 - Calendario 08 B
+</option><option value="200810">200810 - Calendario 08 A
+</option><option value="200790">200790 - Calendario 07 U
+</option><option value="200780">200780 - Cursos de Verano 2007
+</option><option value="200720">200720 - Calendario 07 B
+</option><option value="200710">200710 - Calendario 07 A
+</option><option value="200690">200690 - Calendario 06 U
+</option><option value="200680">200680 - Cursos de Verano 2006
+</option><option value="200620">200620 - Calendario 06 B
+</option><option value="200610">200610 - Calendario 06 A
+</option><option value="200580">200580 - Cursos de Verano 2005
+</option><option value="200520">200520 - Calendario 05 B
+</option><option value="200510">200510 - Calendario 05 A
+</option><option value="200480">200480 - Cursos de Verano 2004
+</option><option value="200420">200420 - Calendario 04 B
+</option><option value="200410">200410 - Calendario 04 A
+</option><option value="200380">200380 - Cursos de Verano 2003
+</option><option value="200320">200320 - Calendario 03 B
+</option><option value="200310">200310 - Calendario 03 A
+</option><option value="200280">200280 - Cursos de Verano 2002
+</option><option value="200220">200220 - Calendario 02 B
+</option><option value="200210">200210 - Calendario 02 A
+</option><option value="200160">200160 - Calendario 01 "A" Anualidades
+</option><option value="200130">200130 - Calendario 01"C" cuatrimestres
+</option><option value="200120">200120 - Calendario 01 B
+</option><option value="200110">200110 - Calendario 01 A
+</option><option value="200099">200099 - Calendario de prueba
+</option><option value="200060">200060 - Calendario 2000 "B" anualidade
+</option><option value="200050">200050 - Calendario 2000 "E"
+</option><option value="200030">200030 - Calendario 2000 C
+</option><option value="200020">200020 - Calendario 00 B
+</option><option value="200010">200010 - Calendario 00 A
+</option><option value="199990">199990 - Calendario de Prueba
+</option><option value="199960">199960 - Calendario 99 "A" anualidades
+</option><option value="199950">199950 - Calendario 99 "E" cuatrimestre
+</option><option value="199921">199921 - Calendario 99 'B'
+</option><option value="199920">199920 - Calendario 99 B
+</option><option value="199911">199911 - Calendario 99 'A' bis
+</option><option value="199910">199910 - Calendario 99 A
+</option><option value="199870">199870 - Calendario 98 "B" anualidades
+</option><option value="199860">199860 - Calendario 98 "A" anualidades
+</option><option value="199850">199850 - Calendario 98 "E"
+</option><option value="199840">199840 - Calendario 98 "D" cuatrimestre
+</option><option value="199830">199830 - Calendario 98 "C"
+</option><option value="199820">199820 - Calendario 98 B
+</option><option value="199810">199810 - Calendario 98 A
+</option><option value="199720">199720 - Calendario 97 B
+</option><option value="199710">199710 - Calendario 97 A
+</option><option value="199620">199620 - Calendario 96 B
+</option><option value="199611">199611 - Calendario 1996 Extra
+</option><option value="199610">199610 - Calendario 96 A
+</option><option value="199520">199520 - Calendario 95 B
+</option><option value="199510">199510 - Calendario 95 A
+</option><option value="199420">199420 - Calendario 94 B
+</option><option value="199410">199410 - Calendario 94 A
+</option><option value="199320">199320 - Calendario 93 B
+</option><option value="199310">199310 - Calendario 93 A
+</option><option value="199220">199220 - Calendario 92 B
+</option><option value="199110">199110 - Calendario 91 A
+</option><option value="199030">199030 - Calendario 90 "C"
+</option><option value="199010">199010 - Calendario 90 A
+</option><option value="198810">198810 - Calendario 88 A
+</option><option value="198210">198210 - Calendario 82 A
+</option><option value="198010">198010 - Calendario 80 A
+</option></select>
+</td></tr>
+<tr>
+<th align="RIGHT" class="encabezado">Centro:</th>
+<td colspan="3">
+<select name="cup" size="1">
+<option value="3">3 - C. U. DE TLAJOMULCO
+</option><option value="4">4 - C. U. DE GUADALAJARA
+</option><option value="5">5 - C.U. DE TLAQUEPAQUE
+</option><option value="6">6 - C.U. DE CHAPALA
+</option><option value="A">A - C.U. DE ARTE, ARQ. Y DISEÑO
+</option><option value="B">B - C.U. DE CS. BIOLOGICO Y AGR.
+</option><option value="C">C - C.U. DE CS. ECONOMICO-ADMVAS.
+</option><option value="D">D - C.U. DE CS. EXACTAS E ING.
+</option><option value="E">E - C.U. DE CS. DE LA SALUD
+</option><option value="F">F - C.U. DE CS. SOCIALES Y HUM.
+</option><option value="G">G - C.U. DE LOS ALTOS
+</option><option value="H">H - C.U. DE LA CIENEGA
+</option><option value="I">I - C.U. DE LA COSTA
+</option><option value="J">J - C.U. DE LA COSTA SUR
+</option><option value="K">K - C.U. DEL SUR
+</option><option value="M">M - C. U. DE LOS VALLES
+</option><option value="N">N - C.U. DEL NORTE
+</option><option value="O">O - CUCEI SEDE VALLES
+</option><option value="P">P - CUCSUR SEDE VALLES
+</option><option value="Q">Q - CUCEI SEDE NORTE
+</option><option value="R">R - CUALTOS SEDE NORTE
+</option><option value="S">S - CUCOSTA SEDE NORTE
+</option><option value="T">T - SEDE TLAJOMULCO
+</option><option value="U">U - C. U. DE LOS LAGOS
+</option><option value="V">V - CICLO DE VERANO
+</option><option value="W">W - CUCEA SEDE VALLE
+</option><option value="X">X - SIST. DE UNIVERSIDAD VIRTUAL
+</option><option value="Y">Y - ESCUELAS INCORPORADAS
+</option><option value="Z">Z - C. U. DE TONALA
+</option></select>
+</td></tr>
+<tr>
+<th align="RIGHT" class="encabezado">Carrera:</th>
+<td colspan="3">
+<table border="0">
+<tbody><tr>
+<th align="LEFT" class="titulos">Clave</th>
+<td></td>
+<th align="LEFT" class="titulos">Descripción de la carrera</th>
+</tr>
+<tr><td><input type="text" name="majrp" size="4" maxlength="4" onblur="this.value=this.value.toUpperCase();"></td>
+<td><a href="javascript:lov_carrera()"><img src="./find.gif" width="24" height="24" border="0" alt="Lista de carreras"></a></td>
+<td><input type="text" name="majrdescp" size="40" maxlength="40" onblur="style=" disabled="true;&quot;"></td>
+</tr>
+</tbody></table>
+</td></tr>
+<tr>
+<th align="RIGHT" class="encabezado">Materia:</th>
+<td colspan="3">
+<table border="0">
+<tbody><tr>
+<th align="LEFT" class="titulos">Clave</th>
+<th align="LEFT" class="titulos">Título</th>
+</tr>
+<tr>
+<td align="LEFT"><input type="text" name="crsep" size="5" maxlength="5" onblur="this.value=this.value.toUpperCase();"></td>
+<td align="LEFT"><input type="text" name="materiap" size="40" maxlength="60" onblur="this.value=this.value.toUpperCase();"></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<th align="RIGHT" class="encabezado">Horario:</th>
+<td>
+<table border="0">
+<tbody><tr>
+<th class="titulos" colspan="2">Hora</th>
+</tr>
+<tr>
+<th class="subtitulos">Inicio</th>
+<th align="LEFT" class="subtitulos">Fin</th>
+</tr>
+<tr>
+<td align="LEFT"><input type="text" name="horaip" size="4" maxlength="4"></td>
+<td align="LEFT"><input type="text" name="horafp" size="4" maxlength="4"></td>
+</tr>
+</tbody></table>
+</td>
+<td align="RIGHT" valign="top">
+<table border="0">
+<tbody><tr>
+<th class="titulos" colspan="6">Días</th>
+</tr>
+<tr>
+<th class="subtitulos">LU</th>
+<th align="LEFT" class="subtitulos">MA</th>
+<th align="LEFT" class="subtitulos">MI</th>
+<th align="LEFT" class="subtitulos">JU</th>
+<th align="LEFT" class="subtitulos">VI</th>
+<th align="LEFT" class="subtitulos">SA</th>
+</tr>
+<tr>
+<td><input type="checkbox" name="lup" value="M"></td>
+<td><input type="checkbox" name="map" value="T"></td>
+<td><input type="checkbox" name="mip" value="W"></td>
+<td><input type="checkbox" name="jup" value="R"></td>
+<td><input type="checkbox" name="vip" value="F"></td>
+<td><input type="checkbox" name="sap" value="S"></td>
+</tr>
+</tbody></table>
+</td>
+<td align="RIGHT">
+<table border="0">
+<tbody><tr>
+<th class="titulos" colspan="2">Lugar</th>
+</tr>
+<tr>
+<th class="subtitulos">Edificio</th>
+<th align="LEFT" class="subtitulos">Aula</th>
+</tr>
+<tr>
+<td align="LEFT"><input type="text" name="edifp" size="5" maxlength="5" onblur="this.value=this.value.toUpperCase();"></td>
+<td align="LEFT"><input type="text" name="aulap" size="5" maxlength="5" onblur="this.value=this.value.toUpperCase();"></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<th align="RIGHT" class="encabezado">Sección:</th>
+<td align="LEFT" colspan="3" class="tdradio"><input type="checkbox" name="dispp" value="D">Incluir sólo las secciones con lugares disponibles</td>
+</tr>
+<tr>
+<th align="RIGHT" class="encabezado">Ordenado<br>por:</th>
+<td class="tdradio"><input type="radio" name="ordenp" value="0" checked="">Materia</td>
+<td class="tdradio"><input type="radio" name="ordenp" value="1">Clave del curso</td>
+<td align="LEFT" class="tdradio"><input type="radio" name="ordenp" value="2">NRC</td>
+</tr>
+<tr>
+<th align="RIGHT" class="encabezado">Mostrar<br>de:</th>
+<td class="tdradio"><input type="radio" name="mostrarp" value="100" checked="">100 en 100</td>
+<td class="tdradio"><input type="radio" name="mostrarp" value="200">200 en 200</td>
+<td align="LEFT" class="tdradio"><input type="radio" name="mostrarp" value="500">500 en 500</td>
+</tr>
+</tbody></table>
+<br>
+<br>
+<input type="button" value="Consultar" id="idConsultar" class="boton" style="width:100px;" onclick="frm_consulta_oferta.submit();">
+<input type="reset" value="Restablecer Valores">
+</form>
+<br>
+<br>
+<hr>
+<table border="0" align="CENTER" width="100%" bgcolor="#ffffff" style="border-color:#ffffff;background-color:#ffffff;">
+<tbody><tr>
+<td align="CENTER" valign="bottom" bgcolor="FFFFFF" style="background-color:#ffffff;"><font color="990000" face="arial" size="1">&nbsp;&nbsp;(c) 2002 Universidad de Guadalajara </font></td>
+</tr>
+<tr>
+<td align="CENTER" valign="bottom" bgcolor="FFFFFF" style="background-color:#ffffff;"><font color="000066" face="arial" size="1">&nbsp;&nbsp;Junio 13 de 2026, 11:12 PM</font></td>
+</tr>
+</tbody></table>
+
+
+</font></font></body></html>

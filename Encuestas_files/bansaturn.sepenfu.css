@@ -1,0 +1,71 @@
+
+	BODY {
+		scrollbar-face-color:#e5e5e5;
+		scrollbar-shadow-color:#000066;
+		scrollbar-highlight-color:#e5e5e5;
+		scrollbar-3dlight-color:#000066;
+		scrollbar-darkshadow-color:#FFFFFF;
+		scrollbar-arrow-color:#000066;
+		scrollbar-track-color:#EEEEEE;
+	}
+
+	select {
+	font-family: Arial;
+	font-size: 10;
+	color: #000066;
+	background-color: #FFFFFF;
+	}
+
+	.help{font-size:12px;
+			  color:RED;
+			  font-family:Arial,tahoma,sans-serif;
+			  }
+
+	.letra1{font-size:11px;
+			  color:#000066;
+			  font-family:Arial,tahoma,sans-serif;
+			  }
+
+  .item{BORDER-STYLE:groove;
+  		 border-width:2;
+  		 border-color: #FFFFFF;
+  		 }
+
+  .encab_gde{font-size:12px;
+			  color:#000066;
+        text-align:center;
+			  font-family:Arial,tahoma,sans-serif;
+        font-weight:bold;
+        background-color:lightsteelblue;
+  		 }
+
+   .boton{border-width:0.05cm;
+          border-style:inset;
+          border-color:lightsteelblue;
+          background-color:lightsteelblue;
+          font-family:comic sans ms;
+          font-size:10;
+          }
+
+  .boton1{border-width:0.05cm;
+          border-style:groove;
+          border-color:#6699CC;
+          background-color:#6699CC;
+          font-family:Arial,tahoma,sans-serif;
+          color:#FFFFFF;
+          font-size:13px;
+          font-weight:bold;
+          }
+
+	a{text-decoration:none}
+ 	a:hover {text-decoration:underline;}
+	a:link { color: #000066}
+	a:visited { color: #000066}
+	a:hover { color: #000066}
+	a:active { color: #000066}
+	a.a_item{width: 100%;
+					 font-size:11px;
+					 font-family:Arial,tahoma,sans-serif;
+					 }
+
+	
