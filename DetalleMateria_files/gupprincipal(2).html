@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://siiauescolar.siiau.udg.mx/wal/scpcata.xmateria -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="./font-awesome.min.css">
+<script src="./jquery-1.10.2.js.descarga"></script>
+<script src="./jquery-ui.js.descarga"></script>
+<style>
+
+    body, html {
+      font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+      font-size: 11px;
+      color: #000000;
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+           }
+
+    table {
+       border-collapse: collapse;
+       border-radius: 5px;
+       border-bottom: 2px solid #5D8AA8;
+           }
+
+    table.tblmenu {
+       border-collapse: collapse;
+       border-radius: 5px;
+       border-bottom: 0px solid #ddd;
+           }
+
+    tr {
+        background-color:#ffffff;
+        color: #08457E;
+       }
+
+    tr.trmenu {
+        background-color:#f5f5f5;
+        color: #08457E;
+    }
+
+    tr.trmenuopc {
+        background-color:  #f5f5f5;
+        color:  #4682B4;
+        font-weight:  bold;
+    }
+
+    tr.trmenuopc:hover {
+      color: #F0F8FF;
+      font-size: 12px;
+      background-color: #5D8AA8; /*  #B2EC5D; #85BB65; #CBFFBD; #77cb97; #779ECB;*/
+     }
+
+    tr.trblanco:hover {
+      background-color: #ffffff;
+     }
+
+   /*
+    tr:hover {
+        background-color: #B2EC5D;
+        color:            #0F4D92;
+       }
+   */
+    table.tblparametros {
+       border-collapse: collapse;
+       border-radius: 5px;
+       border-bottom: 2px solid #5D8AA8;
+           }
+
+   /*
+    tr.trparametros:hover {
+        background-color: #FCFCFC;
+        color:            inherit;
+    }
+   */
+
+    th {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 11px;
+        padding: 4px 4px;
+        text-align: left;
+        border-bottom: 1px solid #CFCFC4;
+        border-right: 1px solid #CFCFC4;
+        border-left: 1px solid #CFCFC4;
+        background-color:#E5E4E2;
+        color: #0F4D92;
+        }
+
+    span.titulo1 {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 4px 4px;
+        text-align: left;
+        background-color:#ffffff;
+        color: #0F4D92;
+        }
+
+    .titulo {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 4px 4px;
+        text-align: left;
+        background-color:#ffffff;
+        color: #0F4D92;
+       }
+
+    .titcampana {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 14px;
+        padding: 4px 4px 10px;
+        text-align: left;
+        background-color:#ffffff;
+        color: #0F4D92;
+        float:left;
+        }
+
+
+    td {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 11px;
+        padding: 4px;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        text-align: left;
+        }
+
+     td.sinborde {
+        font-size: 12px;
+        padding: 4px;
+        text-align: center;
+        border: 0px solid #fff;
+        }
+
+    select {
+      background: #fff;
+      color: #585757;
+      padding: 2px;
+      font-size: 12px;
+      border: 1px solid #C1C1C1;
+      border-radius: 5px;
+      height: auto;
+      }
+
+    option {
+        background-color: #fff;
+        color: #0047AB;
+        font-size: 12px;
+        padding: 4px;
+        border-radius: 5px;
+      }
+
+    select>option:hover
+        { background-color: #92A1CF;
+          color: #FFFFFF; }
+
+    select:disabled {
+         color: #f5f5f5;
+         background-color: #d5d5d5;
+         cursor: not-allowed;
+        }
+
+   /* Style the submit button with a specific background color etc */
+    input[type=text], input[type=password], input[type=number]{
+        background-color: #fff;
+        color: #1E6D8A;
+        padding: 4px;
+        border: solid;
+        border-width: 1px;
+        border-color: #ccc;
+        border-radius: 4px;
+        }
+
+    /* Style the submit button with a specific background color etc #5D8AA8 */
+    input[type=submit], input[type=button], input[type=reset] {
+        background-color: #6082B6;
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+    input:disabled {
+       background-color: #dddddd;
+       color: #1E6D8A;
+       cursor: not-allowed;
+       }
+
+    /* When moving the mouse over the submit button, add a darker color  */
+    input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover {
+        background-color: #0065E0;  /*#318CE7;*/
+        color: #ffffff;
+        /*box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);*/
+        }
+
+    input[type=button]:active {
+      transform: translate(2px,2px);
+      }
+
+    /* Style the submit button with a specific background color etc #5D8AA8 8DB600*/
+    button {
+        background-color: #5B92E5; /*#1F5898;*/ /*#22B210;*/
+        color: #ffffff;
+        font-size: 12px;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        //box-shadow: 6px 6px 6px rgba(0, 0, 0, .2);
+        }
+
+    button:hover {
+        background-color: #1F5898;  /*#318CE7;*/
+        color: #C6F5F2;  /*#ffffff;*/
+        }
+
+    button:active {
+        background-color: #5B92E5;
+        //box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+        transform: translateY(2px);
+        }
+
+    button:disabled {
+        background-color: #c5c5c5;
+        cursor: not-allowed;
+        }
+
+   /* Estilo para los diferentes Modulos (ESCOLAR, RH, ESCOLAR SEMS, EGRESADOS, etc. */
+    input.btnMenu {
+        background-color: #f5f5f5;
+        color: #08457E;
+        font-size: 12px;
+        padding: 4px 4px 4px 4px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+   input.btnMenu:hover {
+        background-color: #007BA7;
+        color: #f5f5f5;
+    }
+
+    input.btnSistema {
+        background-color: #007BA7;   /*#CFCFC4;*/
+        color: #E7FEFF;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 4px;
+        border: solid #5D8AA8 1px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+   input.btnSistema:hover {
+        background-color: #E7FEFF;
+        color: #007BA7;
+    }
+
+    input.btnSalir {
+        background-color: #DBEBF0;
+        color: #08457E;
+        font-size: 12px;
+        padding: 2px 4px 2px 4px;
+        border-radius: 5px;
+        border: solid #5D8AA8 1px;
+        cursor: pointer;
+    }
+
+   input.btnSalir:hover {
+        background-color: #007FFF;
+        color: #FFFFFF;
+    }
+
+   .optMenu {
+      cursor:pointer;
+      border:      0px solid gray;
+      padding:     4px 4px 4px 4px;
+      font-size:   14px;
+      text-align:  left;
+      /*border-radius: 5px;*/
+      background-color:#f5f5f5;
+      color: #08457E;
+    }
+
+    .optMenu:hover {
+        background-color: #4682B4;
+        color:            #ffffff;
+    }
+
+   div {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        border-width: 0px;
+        border-color: #fff;
+        background-color: #ffffff;
+        }
+
+    div.notas {
+        display: block;
+        text-align: center;
+        background-color: #CFCFC4;
+        color: #5D8AA8;
+        padding: 6px 6px;
+        font-size : 14px;
+        font-family: Arial;
+        font-weight: normal;
+        border-radius: 5px;
+        margin: 0 auto;
+        }
+
+    div.menuSub {
+        background-color:#f5f5f5;
+        left:1px;
+        border:1px solid #f5f5f5;
+        float:left;
+        font-size:14px;
+        font-weight:bold;
+        cursor:pointer;
+        }
+
+    .encabezado1 {
+      font-size: 14px;
+      background-color:#0F4D92;
+      color: #fff;
+      padding: 4px 4px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+       }
+
+    .encpastel1 {
+      font-size: 14px;
+      background-color: #c7f7f7; /*#84b6f4; #b0e0e6;*/
+      color: #0489B1;
+      padding: 4px 4px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+      border-bottom: solid 2px #96c4c4;
+      }
+
+   th.thfijo {
+      position: sticky;
+      top: 0;
+     }
+
+    #campana {
+      font-size:  18px;
+      color:      #318CE7;
+     }
+
+    .thazul {
+      font-size: 14px;
+      background-color:#0F4D92;
+      color: #fff;
+      padding: 4px 4px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+       }
+
+    .thprincipal {
+      font-size: 14px;
+      background-color:#0F4D92;
+      color: #fff;
+      padding: 4px 4px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+       }
+
+    .encabezado2 {
+      background-color:#AEC6CF;
+      color: #000080;
+      padding: 6px 6px;
+    }
+
+    .encabezado3 {
+      font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+      font-size: 12px;
+      padding: 4px;
+      background-color:#007BA7;
+      color: #fff;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+       }
+
+    .encabezado4 {
+      background-color:#ddd;
+      color: #000080;
+      padding: 6px 6px;
+       }
+
+    .encabezado5{
+      background-color:#ffffff;
+      color: #fff;
+      padding: 6px 6px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius:  5px;
+      border-bottom-right-radius: 5px;
+      border-style:none;
+       }
+
+    .encabezado6{
+      background-color:#3399CC;
+      color: #ffffff;
+      font-size:15px;
+      padding: 6px 6px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius:  5px;
+      border-bottom-right-radius: 5px;
+       }
+
+    .encabezado7 {
+      background-color:#E5E4E2;
+      color: #000080;
+      padding: 6px 6px;
+       }
+
+    .notificacion {
+      /*background-color:#E5E4E2;*/
+      color: #000080;
+      color: #2980B9;
+      padding: 1px 1px;
+      font-size:12px;
+      font-weight:bold;
+      text-align:left;
+      <image src="/ows-img/check.gif" width="15" height="15">
+      /*<img src="/ows-img/none.gif" width="15" height="15">*/
+       }
+
+
+   p { padding-left: 6px;
+       text-align:left;
+       }
+
+    .pie1 {
+      background-color:#0F4D92;
+      color: #fff;
+      padding: 6px 6px;
+      border-bottom-left-radius:  5px;
+      border-bottom-right-radius: 5px;
+       }
+
+    .pie3 {
+      background-color:#007BA7;
+      color: #fff;
+      padding: 6px 6px;
+      border-bottom-left-radius:  5px;
+      border-bottom-right-radius: 5px;
+       }
+
+      td.title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 26px;
+        color: #13A2AE; /*  #4682B4;*/
+      }
+
+      td.title:hover {
+        background-color: #5D8AA8;
+        color: #ffffff;
+      }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)}
+        to {-webkit-transform: scale(1)}
+    }
+
+    @keyframes animatezoom {
+        from {transform: scale(0)}
+        to {transform: scale(1)}
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+    }
+
+    #wrap_title{margin:0px;padding:0px;width:970px;height:54px;clear:both;}
+    #title{height:54px;float:left;width:730px;clear:both;padding:0px;}
+    #aux_title{float:right;width:240px;height:54px;overflow:hidden;}
+
+    .ui-grid {
+        margin-bottom: 10px;
+    }
+
+    .ui-grid .ui-grid-row div {
+        background-color: #cccccc;
+        text-align: center;
+        border: 1px solid #dddddd;
+        padding: 10px 0px;
+    }
+
+   /* Los siguientes se agragan para compatibilidad con 09 Migracion de Egresados y paquetes que usan SHLCSSF.STYLE_DIV */
+
+     div.carreras {
+          background-color: #FFFFFF;
+          color: #193970;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          border:8px;
+          border-width:0px;
+          border-color:#C0C0C0;
+          border-style:solid;
+          float: left;
+          position: relative;
+          width:  80%;
+          height: 60%;
+          left:   110px;
+          top:    20px;
+       }
+
+      div.btnContinuar {
+          width: 100%;
+          height: 4%;
+          background-color: #FFFFFF;
+          color: #FFFFFF;
+          float: center;
+          position: relative;
+          left:   440px;
+      }
+
+      div.encabezado {
+          width: 100%;
+          height: 4%;
+          background-color: #193970;
+          color: #FFFFFF;
+          float: center;
+          align: center;
+          position: fixed;
+        }
+
+      div.centro {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-width:0px;
+        border-color:#FFFFFF;
+          }
+   </style>
+<style>
+      button.opcButton {
+        background-color: #ffffff;
+        color:            #0F4D92;
+        border: solid 2px #738678;
+        padding: 4px 6px 4px 6px;
+        }
+
+      button.opcButton:hover {
+         color: #FF0000;
+         border: solid 2px #FF6700;
+        }
+
+     tr:hover {
+        background-color: #ACF986; /* #FDFD96; #F2FA99;  #DFF6E6; #B2EC5D;*/
+        color:            #0F4D92;
+       }
+
+     tr.filab:hover {
+        background-color: #ffffff;
+     }
+     </style>
+<script>
+       function iniciaForma() {
+         $("#divParametros").load("scpcata.xmateria_frm",{});
+         }
+
+       function traeDatos() {
+         var accion;
+         accion = document.frm_selecmat.action+"?"+$("#selectmaxID").serialize();
+         $("#divCursos").load(accion);
+         }
+
+       function generaExcel() {
+         $("#tblCursos").tableExport({type:"excel"});
+        }
+    </script>
+</head>
+<body style="">
+<div id="divGral" style="width:99%;height:98%; border:solid 1px #fff;">
+<div id="divParametros" style="float:left;width:40%;height:46%;padding-left:6px;border:solid 1px #DDF0FC;border-radius:10px;"><div style="padding-top:8px;padding-bottom:8px;width:95%;font-size:16px;font-weight:bold;color:#2980B9;text-align:left;">
+Consulta del Catálogo de Materias
+</div>
+<div style="font-size:12px;text-align:left;width:95%;padding-bottom:6px;color:#0F4D92;"><i class="fa fa-bell" id="campana"></i>&nbsp;&nbsp;
+Para ver las materias del catálogo, puedes escribir el área o
+          la clave o parte del nombre de la materia, además de seleccionar el plan al cual pertenece.
+          Al terminar oprime el botón "Consultar".
+</div>
+<form action="https://siiauescolar.siiau.udg.mx/wal/scpcata.selecmat" method="POST" name="frm_selecmat" id="selectmaxID">
+<table border="1" cellpadding="2" cellspacing="2">
+<tbody><tr>
+<th colspan="2" class="encabezado1">Catálogo de Materias</th>
+</tr>
+<tr>
+<th>Area:</th>
+<td><input type="text" name="subjp" size="4" maxlength="4" onblur="this.value=this.value.toUpperCase();"></td>
+</tr>
+<tr>
+<th>Clave:</th>
+<td><input type="text" name="clavep" size="5" maxlength="5" onblur="this.value=this.value.toUpperCase();"></td>
+</tr>
+<tr>
+<th>Nombre:</th>
+<td><input type="text" name="materiap" size="20" maxlength="30" onblur="this.value=this.value.toUpperCase();"></td>
+</tr>
+<tr>
+<th>Plan:</th>
+<td><input type="radio" name="planp" value="C" checked="">CREDITOS  <input type="radio" name="planp" value="R">RIGIDOS  <input type="radio" name="planp" value="A">AMBOS</td>
+</tr>
+</tbody></table>
+<br>
+<input type="hidden" name="viene" value="">
+<div style="text-align:left;">
+<button type="button" onclick="traeDatos();">Consultar<i class="fa fa-check" style="padding-left:6px;font-size-16px;"></i></button>
+</div>
+</form>
+</div>
+<div id="divCursos" style="float:right;width:59%;height:98%;border:solid 1px #DDF0FC;border-radius:10px;overflow:auto;">
+<span><i class="fa fa-book" style="font-size:320px;color:#f5f5f5;padding-top:80px;"></i></span>
+</div>
+<div id="divDatos" style="float:left;width:40%;height:50%;padding-left:6px;padding-top:10px;border:solid 1px #DDF0FC;border-radius:10px;overflow:auto;">
+<span><i class="fa fa-table" style="font-size:300px;color:#f5f5f5;padding-top:10px;"></i></span>
+</div>
+</div>
+<script>iniciaForma();</script>
+
+
+</body></html>

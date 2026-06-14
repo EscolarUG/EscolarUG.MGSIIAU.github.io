@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://siiauescolar.siiau.udg.mx/wal/sgphist.kardex?pidmp=2055864&majrp=INME&cicloap=202610 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="./font-awesome.min.css">
+<script src="./jquery-1.10.2.js.descarga"></script>
+<script src="./jquery-ui.js.descarga"></script>
+<script type="text/javascript" charset="utf-8" src="./jquery.js.descarga"></script>
+<style>
+
+    body, html {
+      font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+      font-size: 11px;
+      color: #000000;
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+           }
+
+    table {
+       border-collapse: collapse;
+       border-radius: 5px;
+       border-bottom: 2px solid #5D8AA8;
+           }
+
+    table.tblmenu {
+       border-collapse: collapse;
+       border-radius: 5px;
+       border-bottom: 0px solid #ddd;
+           }
+
+    tr {
+        background-color:#ffffff;
+        color: #08457E;
+       }
+
+    tr.trmenu {
+        background-color:#f5f5f5;
+        color: #08457E;
+    }
+
+    tr.trmenuopc {
+        background-color:  #f5f5f5;
+        color:  #4682B4;
+        font-weight:  bold;
+    }
+
+    tr.trmenuopc:hover {
+      color: #F0F8FF;
+      font-size: 12px;
+      background-color: #5D8AA8; /*  #B2EC5D; #85BB65; #CBFFBD; #77cb97; #779ECB;*/
+     }
+
+    tr.trblanco:hover {
+      background-color: #ffffff;
+     }
+
+   /*
+    tr:hover {
+        background-color: #B2EC5D;
+        color:            #0F4D92;
+       }
+   */
+    table.tblparametros {
+       border-collapse: collapse;
+       border-radius: 5px;
+       border-bottom: 2px solid #5D8AA8;
+           }
+
+   /*
+    tr.trparametros:hover {
+        background-color: #FCFCFC;
+        color:            inherit;
+    }
+   */
+
+    th {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 11px;
+        padding: 4px 4px;
+        text-align: left;
+        border-bottom: 1px solid #CFCFC4;
+        border-right: 1px solid #CFCFC4;
+        border-left: 1px solid #CFCFC4;
+        background-color:#E5E4E2;
+        color: #0F4D92;
+        }
+
+    span.titulo1 {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 4px 4px;
+        text-align: left;
+        background-color:#ffffff;
+        color: #0F4D92;
+        }
+
+    .titulo {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 4px 4px;
+        text-align: left;
+        background-color:#ffffff;
+        color: #0F4D92;
+       }
+
+    .titcampana {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 14px;
+        padding: 4px 4px 10px;
+        text-align: left;
+        background-color:#ffffff;
+        color: #0F4D92;
+        float:left;
+        }
+
+
+    td {
+        font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+        font-size: 11px;
+        padding: 4px;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        text-align: left;
+        }
+
+     td.sinborde {
+        font-size: 12px;
+        padding: 4px;
+        text-align: center;
+        border: 0px solid #fff;
+        }
+
+    select {
+      background: #fff;
+      color: #585757;
+      padding: 2px;
+      font-size: 12px;
+      border: 1px solid #C1C1C1;
+      border-radius: 5px;
+      height: auto;
+      }
+
+    option {
+        background-color: #fff;
+        color: #0047AB;
+        font-size: 12px;
+        padding: 4px;
+        border-radius: 5px;
+      }
+
+    select>option:hover
+        { background-color: #92A1CF;
+          color: #FFFFFF; }
+
+    select:disabled {
+         color: #f5f5f5;
+         background-color: #d5d5d5;
+         cursor: not-allowed;
+        }
+
+   /* Style the submit button with a specific background color etc */
+    input[type=text], input[type=password], input[type=number]{
+        background-color: #fff;
+        color: #1E6D8A;
+        padding: 4px;
+        border: solid;
+        border-width: 1px;
+        border-color: #ccc;
+        border-radius: 4px;
+        }
+
+    /* Style the submit button with a specific background color etc #5D8AA8 */
+    input[type=submit], input[type=button], input[type=reset] {
+        background-color: #6082B6;
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+    input:disabled {
+       background-color: #dddddd;
+       color: #1E6D8A;
+       cursor: not-allowed;
+       }
+
+    /* When moving the mouse over the submit button, add a darker color  */
+    input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover {
+        background-color: #0065E0;  /*#318CE7;*/
+        color: #ffffff;
+        /*box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);*/
+        }
+
+    input[type=button]:active {
+      transform: translate(2px,2px);
+      }
+
+    /* Style the submit button with a specific background color etc #5D8AA8 8DB600*/
+    button {
+        background-color: #5B92E5; /*#1F5898;*/ /*#22B210;*/
+        color: #ffffff;
+        font-size: 12px;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        //box-shadow: 6px 6px 6px rgba(0, 0, 0, .2);
+        }
+
+    button:hover {
+        background-color: #1F5898;  /*#318CE7;*/
+        color: #C6F5F2;  /*#ffffff;*/
+        }
+
+    button:active {
+        background-color: #5B92E5;
+        //box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+        transform: translateY(2px);
+        }
+
+    button:disabled {
+        background-color: #c5c5c5;
+        cursor: not-allowed;
+        }
+
+   /* Estilo para los diferentes Modulos (ESCOLAR, RH, ESCOLAR SEMS, EGRESADOS, etc. */
+    input.btnMenu {
+        background-color: #f5f5f5;
+        color: #08457E;
+        font-size: 12px;
+        padding: 4px 4px 4px 4px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+   input.btnMenu:hover {
+        background-color: #007BA7;
+        color: #f5f5f5;
+    }
+
+    input.btnSistema {
+        background-color: #007BA7;   /*#CFCFC4;*/
+        color: #E7FEFF;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 4px;
+        border: solid #5D8AA8 1px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+   input.btnSistema:hover {
+        background-color: #E7FEFF;
+        color: #007BA7;
+    }
+
+    input.btnSalir {
+        background-color: #DBEBF0;
+        color: #08457E;
+        font-size: 12px;
+        padding: 2px 4px 2px 4px;
+        border-radius: 5px;
+        border: solid #5D8AA8 1px;
+        cursor: pointer;
+    }
+
+   input.btnSalir:hover {
+        background-color: #007FFF;
+        color: #FFFFFF;
+    }
+
+   .optMenu {
+      cursor:pointer;
+      border:      0px solid gray;
+      padding:     4px 4px 4px 4px;
+      font-size:   14px;
+      text-align:  left;
+      /*border-radius: 5px;*/
+      background-color:#f5f5f5;
+      color: #08457E;
+    }
+
+    .optMenu:hover {
+        background-color: #4682B4;
+        color:            #ffffff;
+    }
+
+   div {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        border-width: 0px;
+        border-color: #fff;
+        background-color: #ffffff;
+        }
+
+    div.notas {
+        display: block;
+        text-align: center;
+        background-color: #CFCFC4;
+        color: #5D8AA8;
+        padding: 6px 6px;
+        font-size : 14px;
+        font-family: Arial;
+        font-weight: normal;
+        border-radius: 5px;
+        margin: 0 auto;
+        }
+
+    div.menuSub {
+        background-color:#f5f5f5;
+        left:1px;
+        border:1px solid #f5f5f5;
+        float:left;
+        font-size:14px;
+        font-weight:bold;
+        cursor:pointer;
+        }
+
+    .encabezado1 {
+      font-size: 14px;
+      background-color:#0F4D92;
+      color: #fff;
+      padding: 4px 4px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+       }
+
+    .encpastel1 {
+      font-size: 14px;
+      background-color: #c7f7f7; /*#84b6f4; #b0e0e6;*/
+      color: #0489B1;
+      padding: 4px 4px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+      border-bottom: solid 2px #96c4c4;
+      }
+
+   th.thfijo {
+      position: sticky;
+      top: 0;
+     }
+
+    #campana {
+      font-size:  18px;
+      color:      #318CE7;
+     }
+
+    .thazul {
+      font-size: 14px;
+      background-color:#0F4D92;
+      color: #fff;
+      padding: 4px 4px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+       }
+
+    .thprincipal {
+      font-size: 14px;
+      background-color:#0F4D92;
+      color: #fff;
+      padding: 4px 4px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+       }
+
+    .encabezado2 {
+      background-color:#AEC6CF;
+      color: #000080;
+      padding: 6px 6px;
+    }
+
+    .encabezado3 {
+      font-family: Arial, Verdana, Helvetica, sans-Arial, sans-serif;
+      font-size: 12px;
+      padding: 4px;
+      background-color:#007BA7;
+      color: #fff;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+       }
+
+    .encabezado4 {
+      background-color:#ddd;
+      color: #000080;
+      padding: 6px 6px;
+       }
+
+    .encabezado5{
+      background-color:#ffffff;
+      color: #fff;
+      padding: 6px 6px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius:  5px;
+      border-bottom-right-radius: 5px;
+      border-style:none;
+       }
+
+    .encabezado6{
+      background-color:#3399CC;
+      color: #ffffff;
+      font-size:15px;
+      padding: 6px 6px;
+      border-top-left-radius:  5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius:  5px;
+      border-bottom-right-radius: 5px;
+       }
+
+    .encabezado7 {
+      background-color:#E5E4E2;
+      color: #000080;
+      padding: 6px 6px;
+       }
+
+    .notificacion {
+      /*background-color:#E5E4E2;*/
+      color: #000080;
+      color: #2980B9;
+      padding: 1px 1px;
+      font-size:12px;
+      font-weight:bold;
+      text-align:left;
+      <image src="/ows-img/check.gif" width="15" height="15">
+      /*<img src="/ows-img/none.gif" width="15" height="15">*/
+       }
+
+
+   p { padding-left: 6px;
+       text-align:left;
+       }
+
+    .pie1 {
+      background-color:#0F4D92;
+      color: #fff;
+      padding: 6px 6px;
+      border-bottom-left-radius:  5px;
+      border-bottom-right-radius: 5px;
+       }
+
+    .pie3 {
+      background-color:#007BA7;
+      color: #fff;
+      padding: 6px 6px;
+      border-bottom-left-radius:  5px;
+      border-bottom-right-radius: 5px;
+       }
+
+      td.title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 26px;
+        color: #13A2AE; /*  #4682B4;*/
+      }
+
+      td.title:hover {
+        background-color: #5D8AA8;
+        color: #ffffff;
+      }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)}
+        to {-webkit-transform: scale(1)}
+    }
+
+    @keyframes animatezoom {
+        from {transform: scale(0)}
+        to {transform: scale(1)}
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+    }
+
+    #wrap_title{margin:0px;padding:0px;width:970px;height:54px;clear:both;}
+    #title{height:54px;float:left;width:730px;clear:both;padding:0px;}
+    #aux_title{float:right;width:240px;height:54px;overflow:hidden;}
+
+    .ui-grid {
+        margin-bottom: 10px;
+    }
+
+    .ui-grid .ui-grid-row div {
+        background-color: #cccccc;
+        text-align: center;
+        border: 1px solid #dddddd;
+        padding: 10px 0px;
+    }
+
+   /* Los siguientes se agragan para compatibilidad con 09 Migracion de Egresados y paquetes que usan SHLCSSF.STYLE_DIV */
+
+     div.carreras {
+          background-color: #FFFFFF;
+          color: #193970;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          border:8px;
+          border-width:0px;
+          border-color:#C0C0C0;
+          border-style:solid;
+          float: left;
+          position: relative;
+          width:  80%;
+          height: 60%;
+          left:   110px;
+          top:    20px;
+       }
+
+      div.btnContinuar {
+          width: 100%;
+          height: 4%;
+          background-color: #FFFFFF;
+          color: #FFFFFF;
+          float: center;
+          position: relative;
+          left:   440px;
+      }
+
+      div.encabezado {
+          width: 100%;
+          height: 4%;
+          background-color: #193970;
+          color: #FFFFFF;
+          float: center;
+          align: center;
+          position: fixed;
+        }
+
+      div.centro {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-width:0px;
+        border-color:#FFFFFF;
+          }
+   </style>
+<style>
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+      overflow: auto;
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-header {
+      padding: 2px 10px;
+      background-color: #CFCFC4; /*#5cb85c;*/
+      color: #1560BD;
+    }
+
+    .modal-body {
+       padding: 10px 16px;
+       overflow-y:auto;
+    }
+
+    .modal-footer {
+      padding: 2px 10px;
+      background-color: #CFCFC4; /*#5cb85c;*/
+      color: #1560BD;
+    }
+  </style>
+</head><body style=""><div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content" id="idContent">
+            <div class="modal-header">
+              <span class="close">�</span>
+              <h2 id="idtxtEncabezado">INFORMACION</h2>
+            </div>
+            <div class="modal-body" id="idBody" style="height:auto;">
+            </div>
+            <div class="modal-footer">
+              <h3>Click para regresar al Kardex</h3>
+            </div>
+          </div>
+
+        </div>
+        
+<script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      //var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      /*
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      */
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+<script>
+    if (window.name == "") {location.href="gspsweb.error"}
+  </script>
+<br>
+<br>
+<div style="width:70%;overflow:auto;">
+<div style="width:20%;float:left;">
+<img src="./logo_udg.gif" alt="U de G" width="100px" height="120px">
+</div>
+<div style="width:56%;float:left;text-align:center;padding-top:50px;">
+<span style="font-family:Arial;font-size:28px;font-weight:bold;color:#0F4D92;">Kardex del estudiante</span>
+</div>
+<div id="infoAlumno" style="width:98%;">
+<table border="0" width="100%" bgcolor="#fff" cellspacing="1" cellpadding="1">
+<tbody><tr>
+<th class="encabezado1" colspan="8">DATOS DEL ESTUDIANTE</th>
+</tr><tr>
+</tr><tr>
+<th>CODIGO:</th>
+<td>226094046</td>
+<th>Nombre:</th>
+<td colspan="5">PEDRO CORREA HERNANDEZ</td>
+</tr>
+<tr>
+<th>SITUACION:</th>
+<td>ACTIVO</td>
+<th>Nivel:</th>
+<td>LICENCIATURA</td>
+<th>ADMISION:</th>
+<td>2026A</td>
+<th>Ultimo ciclo:</th>
+<td>2026A</td>
+</tr>
+<tr>
+<th>Carrera:</th>
+<td colspan="7">INGENIERIA MECANICA ELECTRICA (INME)</td>
+</tr>
+<tr>
+<th>Centro:</th>
+<td colspan="7">CENTRO UNIVERSITARIO DE CIENCIAS EXACTAS E INGENIERIAS</td>
+</tr>
+<tr>
+<th>Sede:</th>
+<td colspan="7">CAMPUS TECNOLOGICO GDL</td>
+</tr>
+</tbody></table>
+</div>
+<div id="leyendaPromedio" style="width:98%;">
+<div id="leyenda" style="width:68%;float:left;text-align:left;">
+<span style="font-size:12px;color:#0F4D92;">Nota: Este documento es informativo y no cuenta como certificado, constancia o comprobante de estudios.</span>
+</div>
+<div id="promedio" style="width:30%;float:right;">
+<table border="0" align="right" cellpadding="0" cellspacing="0" class="tblmenu">
+<tbody><tr>
+<th>Promedio:</th>
+<td>  85.50</td>
+<th>CREDITOS:</th>
+<td>49</td>
+</tr>
+<tr>
+<th>Fecha:</th>
+<td colspan="3">Junio 13 de 2026</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div id="leyendaPromedio" style="width:98%;">
+<style>td.numero {text-align: right;}</style>
+<script>
+   function muestraCRN(pidm, crn, ciclo){
+      modal.style.display = "block";
+      $("#idBody").css("height","60%");
+      $("#idtxtEncabezado").html("Informaci\u00f3n del CRN");
+      $("#idBody").load("shpkard.cons_crn",{pidmp:pidm, crnp:crn, ciclop:ciclo});
+      }
+
+   function muestraCurso(subj,crse,ciclo) {
+      modal.style.display = "block";
+      $("#idBody").css("height","auto");
+      $("#idtxtEncabezado").html("Informaci\u00f3n del Curso");
+      $("#idBody").load("scpcatm.info_crse",{pSubject:subj,pCurso:crse, pCiclo:ciclo});
+      }
+
+   /* imprimir el contenido de un div */
+   function printDiv(nombreDiv) {
+      var contenido = document.getElementById(nombreDiv).innerHTML;
+      var contenidoOriginal= document.body.innerHTML;
+      document.body.innerHTML = contenido;
+      window.print();
+      document.body.innerHTML = contenidoOriginal;
+      }
+
+   function imprimeKardCiclo() {
+      window.open("","wImprKard","top=100,left=700,width=800,height=780,scrollbars=NO");
+      document.fImprime.submit();
+      }
+   </script>
+<table border="1" width="100%" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th colspan="8" class="encabezado1">Calendario 26 A</th>
+</tr>
+<tr>
+<th>CRN</th>
+<th>Clave</th>
+<th>Nombre de la materia</th>
+<th>CALIFICACION</th>
+<th>Tipo</th>
+<th>NC</th>
+<th>HC</th>
+<th>Fecha</th>
+</tr>
+<tr bgcolor="#&quot;ffffff&quot;">
+<td><a href="javascript:muestraCRN(2055864,&#39;153714&#39;,&#39;202610&#39;)">153714</a></td>
+<td><a href="javascript:muestraCurso(&#39;INTE&#39;,&#39;I7370&#39;,&#39;202610&#39;)">I7370</a></td>
+<td>ADMINISTRACION</td>
+<td style=" color:0F4D92; ">90 (NOVENTA)</td>
+<td>ORDINARIO (OE)</td>
+<td style="text-align:right;color:0F4D92;">0</td>
+<td style="text-align:right">51</td>
+<td style="text-align:right">29/MAY/2026</td>
+</tr>
+<tr bgcolor="#&quot;ffffff&quot;">
+<td><a href="javascript:muestraCRN(2055864,&#39;153246&#39;,&#39;202610&#39;)">153246</a></td>
+<td><a href="javascript:muestraCurso(&#39;INTE&#39;,&#39;I5802&#39;,&#39;202610&#39;)">I5802</a></td>
+<td>ALGEBRA LINEAL</td>
+<td style=" color:0F4D92; ">82 (OCHENTA Y DOS)</td>
+<td>ORDINARIO (OE)</td>
+<td style="text-align:right;color:0F4D92;">0</td>
+<td style="text-align:right">68</td>
+<td style="text-align:right">29/MAY/2026</td>
+</tr>
+<tr bgcolor="#&quot;ffffff&quot;">
+<td><a href="javascript:muestraCRN(2055864,&#39;213004&#39;,&#39;202610&#39;)">213004</a></td>
+<td><a href="javascript:muestraCurso(&#39;EDHU&#39;,&#39;V2455&#39;,&#39;202610&#39;)">V2455</a></td>
+<td>ANALISIS DE PROBLEMAS GLOBALES DEL SIGLO XXI</td>
+<td style=" color:0F4D92; ">AC (ACREDITADO)</td>
+<td>ORDINARIO (OE)</td>
+<td style="text-align:right;color:0F4D92;">0</td>
+<td style="text-align:right">80</td>
+<td style="text-align:right">29/MAY/2026</td>
+</tr>
+<tr bgcolor="#&quot;ffffff&quot;">
+<td><a href="javascript:muestraCRN(2055864,&#39;42320&#39;,&#39;202610&#39;)">42320</a></td>
+<td><a href="javascript:muestraCurso(&#39;INTE&#39;,&#39;I6184&#39;,&#39;202610&#39;)">I6184</a></td>
+<td>COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES</td>
+<td style=" color:0F4D92; ">75 ( SETENTA Y CINCO)</td>
+<td>ORDINARIO (OE)</td>
+<td style="text-align:right;color:0F4D92;">0</td>
+<td style="text-align:right">58</td>
+<td style="text-align:right">29/MAY/2026</td>
+</tr>
+<tr bgcolor="#&quot;ffffff&quot;">
+<td><a href="javascript:muestraCRN(2055864,&#39;42543&#39;,&#39;202610&#39;)">42543</a></td>
+<td><a href="javascript:muestraCurso(&#39;INTE&#39;,&#39;I5799&#39;,&#39;202610&#39;)">I5799</a></td>
+<td>PRECALCULO</td>
+<td style=" color:0F4D92; ">85 (OCHENTA Y CINCO)</td>
+<td>ORDINARIO (OE)</td>
+<td style="text-align:right;color:0F4D92;">0</td>
+<td style="text-align:right">85</td>
+<td style="text-align:right">29/MAY/2026</td>
+</tr>
+<tr bgcolor="#&quot;ffffff&quot;">
+<td><a href="javascript:muestraCRN(2055864,&#39;43718&#39;,&#39;202610&#39;)">43718</a></td>
+<td><a href="javascript:muestraCurso(&#39;INTE&#39;,&#39;I6920&#39;,&#39;202610&#39;)">I6920</a></td>
+<td>PROBABILIDAD Y ESTADISTICA</td>
+<td style=" color:0F4D92; ">85 (OCHENTA Y CINCO)</td>
+<td>ORDINARIO (OE)</td>
+<td style="text-align:right;color:0F4D92;">0</td>
+<td style="text-align:right">51</td>
+<td style="text-align:right">29/MAY/2026</td>
+</tr>
+<tr bgcolor="#&quot;ffffff&quot;">
+<td><a href="javascript:muestraCRN(2055864,&#39;43799&#39;,&#39;202610&#39;)">43799</a></td>
+<td><a href="javascript:muestraCurso(&#39;INTE&#39;,&#39;I7415&#39;,&#39;202610&#39;)">I7415</a></td>
+<td>QUIMICA BASICA</td>
+<td style=" color:0F4D92; ">72 ( SETENTA Y DOS)</td>
+<td>ORDINARIO (OE)</td>
+<td style="text-align:right;color:0F4D92;">0</td>
+<td style="text-align:right">76</td>
+<td style="text-align:right">29/MAY/2026</td>
+</tr>
+<tr bgcolor="#&quot;ffffff&quot;">
+<td><a href="javascript:muestraCRN(2055864,&#39;43835&#39;,&#39;202610&#39;)">43835</a></td>
+<td><a href="javascript:muestraCurso(&#39;INTE&#39;,&#39;I7464&#39;,&#39;202610&#39;)">I7464</a></td>
+<td>SEMINARIO MODULAR I</td>
+<td style=" color:0F4D92; ">95 ( NOVENTA Y CINCO)</td>
+<td>ORDINARIO (OE)</td>
+<td style="text-align:right;color:0F4D92;">1</td>
+<td style="text-align:right">17</td>
+<td style="text-align:right">29/MAY/2026</td>
+</tr>
+<tr bgcolor="#&quot;ffffff&quot;">
+<td><a href="javascript:muestraCRN(2055864,&#39;43806&#39;,&#39;202610&#39;)">43806</a></td>
+<td><a href="javascript:muestraCurso(&#39;INTE&#39;,&#39;I7418&#39;,&#39;202610&#39;)">I7418</a></td>
+<td>TALLER DE EXPRESION ORAL Y ESCRITA</td>
+<td style=" color:0F4D92; ">100 ( CIEN)</td>
+<td>ORDINARIO (OE)</td>
+<td style="text-align:right;color:0F4D92;">3</td>
+<td style="text-align:right">51</td>
+<td style="text-align:right">29/MAY/2026</td>
+</tr>
+</tbody></table>
+<br>
+<table border="1" width="100%" cellpadding="0" cellspacing="0">
+<tbody><tr bgcolor="#0F4D92">
+<th colspan="4" class="encabezado1">Resumen de calficicaciones del alumno por estudios</th>
+</tr>
+<tr>
+<th>CREDITOS REQUERIDOS DEL PROGRAMA</th>
+<td class="numero">459</td>
+<th rowspan="2">CREDITOS FALTANTES</th>
+<td rowspan="2" id="creditosFaltantesID" class="numero">410</td>
+</tr>
+<tr>
+<th>CREDITOS ADQUIRIDOS TOTALES</th>
+<td class="numero">49</td>
+</tr>
+<tr>
+<th class="encabezado1">Area</th>
+<th class="encabezado1" style="text-align:right;">Requeridos</th>
+<th class="encabezado1" style="text-align:right;">Adquiridos</th>
+<th class="encabezado1" style="text-align:right;">Diferencia</th>
+</tr>
+<tr>
+<th>BASICO COMUN</th>
+<td class="numero">129</td>
+<td class="numero">25</td>
+<td class="numero">104</td>
+</tr>
+<tr>
+<th>BASICA PARTICULAR</th>
+<td class="numero">189</td>
+<td class="numero">16</td>
+<td class="numero">173</td>
+</tr>
+<tr>
+<th>ESPECIALIZANTE</th>
+<td class="numero">117</td>
+<td class="numero">8</td>
+<td class="numero">109</td>
+</tr>
+<tr>
+<th>OPTATIVA ABIERTA</th>
+<td class="numero">24</td>
+<td class="numero">0</td>
+<td class="numero">24</td>
+</tr>
+<tr>
+<th class="encabezado3">SE EMITIRA UN CERTIFICADO:</th>
+<td style="text-align:center;font-weight:bold;font-size:14px;">PARCIAL</td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+</tr>
+</tbody></table>
+<div id="leyenda" style="width:80%;float:left;text-align:left;padding-top:10px;">
+<span style="font-size:12px;color:#0F4D92;">
+Nota: Este documento es informativo y no tiene validez como una certificado, constancia o comprobante de estudios.
+</span>
+</div>
+<form action="https://siiauescolar.siiau.udg.mx/wal/SHPKARD.IMPRIME_KARDEX" method="post" name="fImprime" target="wImprKard">
+<input type="hidden" name="pReporte" value="SHRKARD_CICLO.rep">
+<input type="hidden" name="pPidm" value="2055864">
+<input type="hidden" name="pMajr" value="INME">
+<input type="hidden" name="pOrien" value="">
+<input type="hidden" name="pCicloAdm" value="202610">
+<input type="hidden" name="pCiclo" value="202610">
+<input type="hidden" name="pCU" value="">
+</form>
+<br>
+<div style="width:60%;padding-top:20px;">
+<!--<button type="button" onclick="imprimeKardCiclo();">Imprimir Kardex&nbsp;&nbsp;<i class="fa fa-print" style="font-size:16px;"></i></button>-->
+<a href="#" onclick="window.print()">Imprimir Kardex</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<table border="0" align="CENTER" width="100%" bgcolor="#ffffff" style="border-color:#ffffff;background-color:#ffffff;">
+<tbody><tr>
+<td align="CENTER" valign="bottom" bgcolor="FFFFFF" style="background-color:#ffffff;"><font color="990000" face="arial" size="1">&nbsp;&nbsp;(c) 2002 Universidad de Guadalajara </font></td>
+</tr>
+<tr>
+<td align="CENTER" valign="bottom" bgcolor="FFFFFF" style="background-color:#ffffff;"><font color="000066" face="arial" size="1">&nbsp;&nbsp;Junio 13 de 2026, 05:51 PM</font></td>
+</tr>
+</tbody></table>
+
+
+</div></body></html>
